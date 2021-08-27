@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style> 
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .e1{background:LightSkyBlue;}
+  .e2{background:LightSalmon;}
+  .e3{background:paleturquoise;}
+  .e4{background:lightpink;}
+  .e5{background:lightgreen}
+  .e6{background:lightsteelblue;}
+  .navbar {
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .footbar {
+      font-size: 12px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr;
+  }
+</style>
 </head> 
-<nav>
- <ul>
-     <li>About</li>
-     <li>Store</li>
-     <li>Gmail</li>
-     <li>Images</li>
- </ul>   
+<nav> 
+ <div class="navbar">
+    <div class="d1">About</div>
+    <div class="d2">Store</div>
+    <div class="d3">Gmail</div>
+    <div class="d4">Images</div>
+  </div>
  <button class="sign-in"
  type="button">Sign In
 </button>
 </nav>
 <body>
 <img alt="Google" src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<input id="main search" type="search">
+</input>
 <button class= "center-buttons"
 type="button">Search 
 </button>
 <button class= "center-buttons"
 type="button">I'm Feeling Lucky</button>
+		
 </body>   
 <footer>
-    <ul>
-        <li>Advertising</li>
-        <li>Business</li>
-        <li>How Search Works</li>
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Settings</li>
-    </ul>
+    <div class="footbar">
+        <div class="e1">Advertising</div>
+        <div class="e2">Business</div>
+        <div class="e3">How Search Works</div>
+        <div class="e4">Privacy</div>
+        <div class="e5">Terms</div>
+        <div class="e6">Settings</div>
+    </div>
+    </footer>
 </footer>
 </html>
