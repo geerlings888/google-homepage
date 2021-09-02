@@ -15,14 +15,23 @@
   .navbar {
     font-size: 12px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
   }
   .footbar {
       font-size: 12px;
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(7, 1fr);
       grid-template-rows: 1fr;
+  }
+  .google-logo {
+    margin: 100px 500px;
+  }
+  .main-search {
+      margin: 0px 600px;
+  }
+  .center-buttons {
+      margin: 0px 600px;
   }
 </style>
 </head> 
@@ -32,19 +41,20 @@
     <div class="d2">Store</div>
     <div class="d3">Gmail</div>
     <div class="d4">Images</div>
-  </div>
- <button class="sign-in"
+    <button id="sign-in" 
  type="button">Sign In
 </button>
+  </div>
+ 
 </nav>
 <body>
-<img alt="Google" src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-<input id="main search" type="search">
+<img class="google-logo" alt="Google" src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<input id="main-search" type="search">
 </input>
-<button class= "center-buttons"
+<button class= "center-buttons" id="search-button"
 type="button">Search 
 </button>
-<button class= "center-buttons"
+<button id="lcuky-button" class= "center-buttons"
 type="button">I'm Feeling Lucky</button>
 		
 </body>   
@@ -59,4 +69,7 @@ type="button">I'm Feeling Lucky</button>
     </div>
     </footer>
 </footer>
-</html>
+<!--
+    Where I left off 8/27: I still need to change the main buttons to be inline with each other
+    and align the top button as well as the nav bar and footer
+-->
