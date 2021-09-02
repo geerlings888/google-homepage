@@ -4,34 +4,40 @@
     <style> 
   .d1{background:LightSkyBlue;}
   .d2{background:LightSalmon;}
-  .d3{background:PaleTurquoise;}
+  .d5{background:PaleTurquoise;}
   .d4{background:LightPink;}
   .e1{background:LightSkyBlue;}
   .e2{background:LightSalmon;}
   .e3{background:paleturquoise;}
-  .e4{background:lightpink;}
+  .e7{background:lightpink;}
   .e5{background:lightgreen}
   .e6{background:lightsteelblue;}
   .navbar {
     font-size: 12px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr) 650px repeat(2,1fr) 100px;
     grid-template-rows: 1fr;
+    justify-items: center;
   }
   .footbar {
       font-size: 12px;
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
+      grid-template-columns: repeat(3, 1fr) 450px repeat(3, 1fr);
       grid-template-rows: 1fr;
   }
   .google-logo {
-    margin: 100px 500px;
+    margin: 200px 500px 0px 500px;
   }
-  .main-search {
-      margin: 0px 600px;
+  .search-bar{
+      margin: 50px 550px 0px 550px;
   }
   .center-buttons {
       margin: 0px 600px;
+      display: grid;
+      grid-template-columns: 1fr 100px 100px 1fr;
+      grid-template-rows: 1fr;
+      padding-top: 15px;
+      padding-bottom: 215px;
   }
 </style>
 </head> 
@@ -39,37 +45,32 @@
  <div class="navbar">
     <div class="d1">About</div>
     <div class="d2">Store</div>
-    <div class="d3">Gmail</div>
-    <div class="d4">Images</div>
-    <button id="sign-in" 
- type="button">Sign In
-</button>
+    <div class="d3"></div>
+    <div class="d4">Gmail</div>
+    <div class="d5">Images</div>
+    <button id="sign-in" type="button">Sign In</button>
   </div>
  
 </nav>
 <body>
 <img class="google-logo" alt="Google" src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-<input id="main-search" type="search">
-</input>
-<button class= "center-buttons" id="search-button"
-type="button">Search 
-</button>
-<button id="lcuky-button" class= "center-buttons"
-type="button">I'm Feeling Lucky</button>
-		
+<input class="search-bar" id="main-search" type="search"></input>
+<div class="center-buttons">
+  <div class="f1"></div>
+  <button id="search-button" type="button">Search</button>
+  <button id="lucky-button" type="button">I'm Feeling Lucky</button>
+  <div class=f2></div>
+</div>
 </body>   
 <footer>
     <div class="footbar">
         <div class="e1">Advertising</div>
         <div class="e2">Business</div>
         <div class="e3">How Search Works</div>
-        <div class="e4">Privacy</div>
-        <div class="e5">Terms</div>
-        <div class="e6">Settings</div>
+        <div class="e4"></div>
+        <div class="e5">Privacy</div>
+        <div class="e6">Terms</div>
+        <div class="e7">Settings</div>
     </div>
     </footer>
 </footer>
-<!--
-    Where I left off 8/27: I still need to change the main buttons to be inline with each other
-    and align the top button as well as the nav bar and footer
--->
