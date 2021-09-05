@@ -2,13 +2,16 @@
 <html>
 <head>
     <style> 
+  @import url(https://fonts.google.com/icons?icon.query=apps);
+  @import url(https://fonts.google.com/icons?icon.query=mic);
+  @import url(https://fonts.google.com/icons?icon.query=app);
   .navbar {
     padding-top: 30px;
     font-size: 13px;
     font-family: sans-serif;
     color: rgb(0 0 0 / 87%);
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 750px repeat(2,1fr) 100px;
+    grid-template-columns: repeat(2, 1fr) 750px repeat(2,1fr) 50px 100px;
     grid-template-rows: 1fr;
     justify-items: center;
   }
@@ -29,9 +32,24 @@
     max-height: 102px;
     max-width: 372px;
   }
+  .search-bar-wrapper{
+    position: relative;
+  }
   .search-bar{
       margin: 0px 450px 0px 450px;
       width: 400px;
+  }
+  .search-icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px 450px;
+  }
+  .microphone-icon{
+    position: absolute;
+    top:0px;
+    left: 380px;
+    padding: 0px 450px;
   }
   .center-buttons {
       margin: 0px 550px;
@@ -50,13 +68,18 @@
     <div class="d3"></div>
     <div class="d4">Gmail</div>
     <div class="d5">Images</div>
+    <img class="apps" src="images/apps_black_24dp.svg">
     <button id="sign-in" type="button">Sign In</button>
   </div>
  
 </nav>
 <body>
 <img class="google-logo" alt="Google" src="/images/00.png">
-<input class="search-bar" id="main-search" type="search"></input>
+<div class="search-bar-wrapper">
+<input class="search-bar" id="main-search" type="text"></input>
+<img class="search-icon" src="images/search_black_24dp.svg">
+<img class="microphone-icon" src="images/mic_black_24dp.svg">
+</div>
 <div class="center-buttons">
   <div class="f1"></div>
   <button id="search-button" type="button">Search</button>
