@@ -2,42 +2,44 @@
 <html>
 <head>
     <style> 
-  .d1{background:LightSkyBlue;}
-  .d2{background:LightSalmon;}
-  .d5{background:PaleTurquoise;}
-  .d4{background:LightPink;}
-  .e1{background:LightSkyBlue;}
-  .e2{background:LightSalmon;}
-  .e3{background:paleturquoise;}
-  .e7{background:lightpink;}
-  .e5{background:lightgreen}
-  .e6{background:lightsteelblue;}
   .navbar {
-    font-size: 12px;
+    padding-top: 30px;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(0 0 0 / 87%);
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 650px repeat(2,1fr) 100px;
+    grid-template-columns: repeat(2, 1fr) 750px repeat(2,1fr) 100px;
     grid-template-rows: 1fr;
     justify-items: center;
   }
   .footbar {
-      font-size: 12px;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(0 0 0 / 87%);
       display: grid;
       grid-template-columns: repeat(3, 1fr) 450px repeat(3, 1fr);
       grid-template-rows: 1fr;
+      justify-items: center;
+      align-items: center;
+    background: #f2f2f2;
+    height: 40px;
   }
   .google-logo {
-    margin: 200px 500px 0px 500px;
+    margin: 135px 500px 0px 500px;
+    max-height: 102px;
+    max-width: 372px;
   }
   .search-bar{
-      margin: 50px 550px 0px 550px;
+      margin: 0px 450px 0px 450px;
+      width: 400px;
   }
   .center-buttons {
-      margin: 0px 600px;
+      margin: 0px 550px;
       display: grid;
-      grid-template-columns: 1fr 100px 100px 1fr;
+      grid-template-columns: 1fr 100px 10px 100px 1fr;
       grid-template-rows: 1fr;
       padding-top: 15px;
-      padding-bottom: 215px;
+      padding-bottom: 295px;
   }
 </style>
 </head> 
@@ -53,13 +55,14 @@
  
 </nav>
 <body>
-<img class="google-logo" alt="Google" src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<img class="google-logo" alt="Google" src="/images/00.png">
 <input class="search-bar" id="main-search" type="search"></input>
 <div class="center-buttons">
   <div class="f1"></div>
   <button id="search-button" type="button">Search</button>
+  <div class="f2"></div>
   <button id="lucky-button" type="button">I'm Feeling Lucky</button>
-  <div class=f2></div>
+  <div class=f3></div>
 </div>
 </body>   
 <footer>
@@ -74,3 +77,4 @@
     </div>
     </footer>
 </footer>
+</html>
